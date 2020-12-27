@@ -24,7 +24,7 @@ const App = () => {
 
   const [openGithubAuthPopup] = useGithubAuth({
     clientId: 'GITHUB_CLIENT_ID',
-    redirectUri: 'http://redirect_uri',
+    redirectUri: 'http://redirect_uri', // Important: redirectUri should match this application domain
     scope: 'repo', // Github authentication scope
     windowOptions: { height: 800, width: 600 }, // Optional window settings
     onSuccess,
